@@ -1,6 +1,6 @@
 {
   "name": "react-figma-icons",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A tool that fetches your icons from Figma  and makes them available through a single React component with type safety.",
   "main": "./index.ts",
   "module": "./index.ts",
@@ -30,5 +30,13 @@
       "import": "./index.ts",
       "require": "./dist/index.js"
     }
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aidanbdaly/react-figma-icons"
+  },
+  "bugs": {
+    "url": "https://github.com/aidanbdaly/react-figma-icons/issues"
+  },
+  "homepage": "https://github.com/aidanbdaly/react-figma-icons#readme"
 }
