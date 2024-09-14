@@ -1,0 +1,34 @@
+{
+  "name": "react-figma-icons",
+  "version": "1.0.0",
+  "description": "A tool that fetches your icons from Figma  and makes them available through a single React component with type safety.",
+  "main": "./index.ts",
+  "module": "./index.ts",
+  "author": "Aidan Bertrum Daly",
+  "type": "commonjs",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "icons:generate": "tsc && node ./dist/core/index.js icons:generate",
+    "icons:clean": "tsc && node ./dist/core/index.js icons:clean",
+    "format": "prettier --write ."
+  },
+  "dependencies": {
+    "react": "^18.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.1.0",
+    "@types/react": "18.3.3",
+    "dotenv": "16.4.5",
+    "eslint": "8.57.0",
+    "figma-js": "1.16.1-0",
+    "prettier": "3.3.3",
+    "typescript": "5.5.4"
+  },
+  "exports": {
+    ".": {
+      "import": "./index.ts",
+      "require": "./dist/index.js"
+    }
+  }
+}
